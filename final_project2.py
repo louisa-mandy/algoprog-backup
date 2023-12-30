@@ -10,8 +10,8 @@ major arcana contains :
 
 the major arcana cards mostly describes about ones life journey. 
 it talks about ones present state and the possibility / outcome 
-it will make. its more to understanding ones feelings and awareness, even psychological,
-spiritual developtment, and evolution. 
+its more to understanding ones feelings and awareness, even psychological,
+spiritual development, and evolution. 
 
 the major arcana has a larger and more crucial meaning compared to the minor arcana cards. 
 
@@ -70,18 +70,20 @@ class person:
 
 
 tarot_cards = [
-    "major_arcana/death.jpg", "major_arcana/judgement.jpg",
-    "major_arcana/temperence.jpg", "major_arcana/The_Chariot.jpg",
-    "major_arcana/The_Devil.jpg", "major_arcana/The_Emperor.jpg",
-    "major_arcana/The_Emperess.jpg", "major_arcana/The_Fool.jpg",
-    "major_arcana/The_Hanged_Man.jpg", "major_arcana/The_Hermit.jpg",
-    "major_arcana/The_Hierophant.jpg", "major_arcana/The_High_Priestess.jpg",
-    "major_arcana/The_Justice.jpg", "major_arcana/The_Lovers.jpg",
-    "major_arcana/The_Magician.jpg", "major_arcana/The_Moon.jpg",
-    "major_arcana/The_Star.jpg", "major_arcana/The_Strength.jpg",
-    "major_arcana/The_Sun.jpg", "major_arcana/The_Tower.jpg",
-    "major_arcana/The_Wheel_Of_Fortune.jpg", "major_arcana/The_World.jpg"
+    "major_arcana/death.png","major_arcana/Reversed_death.png", "major_arcana/judgement.png","major_arcana/Reversed_judgement.png",
+    "major_arcana/temperence.png", "major_arcana/Reversed_temperence.png","major_arcana/The_Chariot.png", "major_arcana/Reversed_The_Chariot.png",
+    "major_arcana/The_Devil.png", "major_arcana/Reversed_The_Devil.png", "major_arcana/The_Emperor.png", "major_arcana/Reversed_The_Emperor.png",
+    "major_arcana/The_Empress.png", "major_arcana/Reversed_The_Empress.png", "major_arcana/The_Fool.png", "major_arcana/Reversed_The_Fool.png", 
+    "major_arcana/The_Hanged_Man.png", "major_arcana/Reversed_The_Hanged_Man.png", "major_arcana/The_Hermit.png", "major_arcana/Reversed_The_Hermit.png",
+    "major_arcana/The_Hierophant.png", "major_arcana/Reversed_The_Hierophant.png", "major_arcana/The_High_Priestess.png", "major_arcana/Reversed_The_High_Priestess.png",
+    "major_arcana/The_Justice.png", "major_arcana/Reversed_The_Justice.png", "major_arcana/The_Lovers.png", "major_arcana/Reversed_The_Lovers.png",
+    "major_arcana/The_Magician.png", "major_arcana/Reversed_The_Magician.png", "major_arcana/The_Moon.png", "major_arcana/Reversed_The_Moon.png",
+    "major_arcana/The_Star.png", "major_arcana/Reversed_The_Star.png", "major_arcana/The_Strength.png", "major_arcana/Reversed_The_Strength.png",
+    "major_arcana/The_Sun.png", "major_arcana/Reversed_The_Sun.png", "major_arcana/The_Tower.png", "major_arcana/Reversed_The_Tower.png",
+    "major_arcana/The_Wheel_Of_Fortune.png", "major_arcana/Reversed_The_Wheel_Of_Fortune.png", "major_arcana/The_World.png", "major_arcana/Reversed_The_World.png"
 ]
+
+window_size = "900x600" # use this instead of repeating the window size
 
 title = " Welcome To Your Trusty Online Tarot Reading!! "
 decorated_title = title.center(50)
@@ -99,8 +101,8 @@ while True:
   print("which type of reading would you like to do?")
 
   print(
-      "1. Do a reading on someone else \n2. Do a reading tarot for yourself")
-  print("3. EXIT PROGRAM")
+      "1. Second Party Tarot Reading \n2. Personal Tarot Reading")
+  print("3. Clear History \n4. EXIT PROGRAM")
   print("")
   user_input = int(input("enter an option: "))  #user input
 
@@ -139,7 +141,7 @@ while True:
 
     print("1. General \n2. Spiritual \n3. Growth \n4. Love \n5. Career")
 
-    print("6. Clear History \n7. Rate The Program ;) \n8. EXIT PROGRAM ")
+    print("6. Rate The Program ;) \n7. EXIT PROGRAM ")
 
     print("")
     user_input = int(input("enter an option: "))  #user input
@@ -187,7 +189,7 @@ while True:
 
         window = tk.Tk()
         window.title("Reading")  # naming the pop up window
-        window.geometry("349x598")  # window size
+        window.geometry(window_size)  # window size
 
         random_tarot_card = random.choice(tarot_cards)
 
@@ -210,7 +212,7 @@ while True:
           window = tk.Tk()
           window.title(window_names[_])  # looping the window
 
-          window.geometry("349x598")  # window size
+          window.geometry(window_size)  # window size
 
           random_tarot_card = random.choice(tarot_cards)
 
@@ -224,7 +226,7 @@ while True:
       elif user_input == 3:
         print("")
         print(
-            "This is the result of Lilly's Situation, Action, And Outcome reading card"
+            "This is the result of", user_name,"'s"," Situation, Action, And Outcome reading card"
         )
 
         for _ in range(3):  # looping the card to shuffle for 3 times
@@ -234,7 +236,7 @@ while True:
           window.title(window_names[_]
                        )  # naming the pop up window as how many times it loops
 
-          window.geometry("349x598")  # window size
+          window.geometry(window_size)  # window size
 
           random_tarot_card = random.choice(tarot_cards)
 
@@ -247,8 +249,7 @@ while True:
 
       elif user_input == 4:
         print("")
-        print("These are the options")
-
+        print("These are the available options for", user_name)
         for _ in range(3):  # looping the card to shuffle for 3 times
 
           window_names = ["Option_1", "Option_2", "Option_3"]
@@ -256,7 +257,7 @@ while True:
           window.title(window_names[_]
                        )  # naming the pop up window as how many times it loops
 
-          window.geometry("349x598")  # window size
+          window.geometry(window_size)  # window size
 
           random_tarot_card = random.choice(tarot_cards)
 
@@ -276,24 +277,21 @@ while True:
       print("")
       print("1. Mind, Body, Spirit")
       print("")
-      print("", "an overall reflection of your current self")
-      print("", "depending on your situation")
+      print("", "an overall reflection of" , user_name,"'s", "current self")
+      print("", "depending on their situation")
 
       print("")
       print("2. Dream Interpretation")
       print("")
       print("", "After waking up from a powerful dream,")
-      print(
-          "",
-          "these cards will help you understand the subconscious meaing behind it all"
-      )
+      print("","these cards will help" , user_name, "to understand the subconscious meaning behind it all")
 
       print("")
       user_input = int(input("Enter an Option here:"))
 
       if user_input == 1:  # if user input 'Mind, Body, Spirit'
         print("")
-        print("These cards represens Lilly's mind, body, and spirit")
+        print("These cards represents" , user_name,"'s", "mind, body, and spirit")
 
         for _ in range(3):  # looping the card to shuffle for 3 times
 
@@ -302,7 +300,7 @@ while True:
           window.title(window_names[_]
                        )  # naming the pop up window as how many times it loops
 
-          window.geometry("349x598")  # window size
+          window.geometry(window_size)  # window size
 
           random_tarot_card = random.choice(tarot_cards)
 
@@ -315,7 +313,7 @@ while True:
 
       elif user_input == 2:  # if user input 'Dream interpertation'
         print("")
-        print("These cards represents on how to interpret dreams")
+        print("These cards represents on how" , user_name," can interprets dreams")
         for _ in range(3):  # looping the card to shuffle for 3 times
 
           window_names = [
@@ -325,7 +323,7 @@ while True:
           window.title(window_names[_]
                        )  # naming the pop up window as how many times it loops
 
-          window.geometry("349x598")  # window size
+          window.geometry(window_size)  # window size
 
           random_tarot_card = random.choice(tarot_cards)
 
@@ -343,11 +341,11 @@ while True:
       print("")
       print("Self Assessment and Advice")
       print("")
-      print("", "How you should approach a problem")
-      print("", "given the level of weakness and strenghts you have")
+      print("", "How", user_name,"should approach a problem")
+      print("", "given the level of weakness and strenghts they have")
 
       print("")
-      print("These cards shows Lilly's weaknesses, strenghts, and advices")
+      print("These cards shows", user_name,"'s", "weaknesses, strenghts, and advices")
 
       for _ in range(3):  # looping the card to shuffle for 3 times
 
@@ -356,7 +354,7 @@ while True:
         window.title(window_names[_]
                      )  # naming the pop up window as how many times it loops
 
-        window.geometry("349x598")  # window size
+        window.geometry(window_size)  # window size
 
         random_tarot_card = random.choice(tarot_cards)
 
@@ -370,21 +368,21 @@ while True:
     elif user_input == 4:  # user inputs Love
       print("")
       print("When talking about love,")
-      print("surely you are curious on how your relationship will go")
+      print("surely you are curious on how their relationship will go")
       print("")
-      print("this is a short reading to know Lilly's relationship dynamics")
-      print("with her significant other")
+      print("this is a short reading to know", user_name,"'s", "relationship dynamics")
+      print("with their significant other")
       print("")
-      print("These cards represents Herself, The Dynamics, and Her Partner")
+      print("These cards represents" , user_name, user_name,"'s","Dynamics, and", user_name,"'s", "Partner")
 
       for _ in range(3):  # looping the card to shuffle for 3 times
 
-        window_names = ["Her", "Relationship_Dynamic", "Her_Partner"]
+        window_names = ["Them", "Relationship_Dynamic", "Their_Partner"]
         window = tk.Tk()
         window.title(window_names[_]
                      )  # naming the pop up window as how many times it loops
 
-        window.geometry("349x598")  # window size
+        window.geometry(window_size)  # window size
 
         random_tarot_card = random.choice(tarot_cards)
 
@@ -399,12 +397,12 @@ while True:
 
       print("")
       print("These cards represents:")
-      print("Card 1 = Will money be coming into my life very soon?")
+      print("Card 1 = Will money be coming to" , user_name,"'s", "life very soon?")
       print(
-          "Card 2 = What career opportunities do i need to consider more closely?"
+          "Card 2 = What career opportunities does", user_name, "need to consider more closely?"
       )
       print(
-          "Card 3 = What allies or obsticles will i face along the way to financial statisfication?"
+          "Card 3 = What allies or obsticles will" , user_name, "face along the way to financial statisfication?"
       )
 
       for _ in range(3):  # looping the card to shuffle for 3 times
@@ -414,7 +412,7 @@ while True:
         window.title(window_names[_]
                      )  # naming the pop up window as how many times it loops
 
-        window.geometry("349x598")  # window size
+        window.geometry(window_size)  # window size
 
         random_tarot_card = random.choice(tarot_cards)
 
@@ -426,9 +424,6 @@ while True:
         window.mainloop()
 
     elif user_input == 6:
-      os.system('clear')
-
-    elif user_input == 7:
       print("")
       print(
           "What do you think of this tarot reading program ?, Rate it from 1-5 pls ( > 3 <333 ) "
@@ -457,13 +452,13 @@ while True:
       else:
         print(" ಠ⁠ ⁠೧⁠ ⁠ಠ wow ")
 
-    elif user_input == 8:  # for exiting the program
+    elif user_input == 7:  # for exiting the program
       print(" Thank you for experiencing 'Your Trusty Online Tarot Reading'")
       break
 
     else:
       print("")
-      print(" Please select a valid number available from the option")
+      print(" Please input a valid number available from the option")
 
   elif user_input == 2:
     print("")
@@ -479,7 +474,7 @@ while True:
 
     print("1. General \n2. Spiritual \n3. Growth \n4. Love \n5. Career")
 
-    print("6. clear history \n7. Rate The Program ;) \n8. EXIT PROGRAM ")
+    print("6. Rate The Program ;) \n7. EXIT PROGRAM ")
 
     print("")
     user_input = int(input("enter an option: "))  #user input
@@ -527,7 +522,7 @@ while True:
 
         window = tk.Tk()
         window.title("Your_Reading")  # naming the pop up window
-        window.geometry("349x598")  # window size
+        window.geometry(window_size)  # window size
 
         random_tarot_card = random.choice(tarot_cards)
 
@@ -550,7 +545,7 @@ while True:
           window = tk.Tk()
           window.title(window_names[_])  # looping the window
 
-          window.geometry("349x598")  # window size
+          window.geometry(window_size)  # window size
 
           random_tarot_card = random.choice(tarot_cards)
 
@@ -574,7 +569,7 @@ while True:
           window.title(window_names[_]
                        )  # naming the pop up window as how many times it loops
 
-          window.geometry("349x598")  # window size
+          window.geometry(window_size)  # window size
 
           random_tarot_card = random.choice(tarot_cards)
 
@@ -596,7 +591,7 @@ while True:
           window.title(window_names[_]
                        )  # naming the pop up window as how many times it loops
 
-          window.geometry("349x598")  # window size
+          window.geometry(window_size)  # window size
 
           random_tarot_card = random.choice(tarot_cards)
 
@@ -642,7 +637,7 @@ while True:
           window.title(window_names[_]
                        )  # naming the pop up window as how many times it loops
 
-          window.geometry("349x598")  # window size
+          window.geometry(window_size)  # window size
 
           random_tarot_card = random.choice(tarot_cards)
 
@@ -665,7 +660,7 @@ while True:
           window.title(window_names[_]
                        )  # naming the pop up window as how many times it loops
 
-          window.geometry("349x598")  # window size
+          window.geometry(window_size)  # window size
 
           random_tarot_card = random.choice(tarot_cards)
 
@@ -694,9 +689,10 @@ while True:
         window_names = ["Your_weaknesses", "Your_Strengths", "Advices"]
         window = tk.Tk()
         window.title(window_names[_]
+        
                      )  # naming the pop up window as how many times it loops
 
-        window.geometry("349x598")  # window size
+        window.geometry(window_size)  # window size
 
         random_tarot_card = random.choice(tarot_cards)
 
@@ -706,7 +702,7 @@ while True:
         label = tk.Label(window, image=photo)
         label.pack()
         window.mainloop()
-
+   
     elif user_input == 4:  # user inputs Love
       print("")
       print("When talking about love,")
@@ -724,7 +720,7 @@ while True:
         window.title(window_names[_]
                      )  # naming the pop up window as how many times it loops
 
-        window.geometry("349x598")  # window size
+        window.geometry(window_size)  # window size
 
         random_tarot_card = random.choice(tarot_cards)
 
@@ -754,7 +750,7 @@ while True:
         window.title(window_names[_]
                      )  # naming the pop up window as how many times it loops
 
-        window.geometry("349x598")  # window size
+        window.geometry(window_size)  # window size
 
         random_tarot_card = random.choice(tarot_cards)
 
@@ -765,10 +761,8 @@ while True:
         label.pack()
         window.mainloop()
 
-    elif user_input == 6:
-      os.system('clear')  # function
 
-    elif user_input == 7:  # rating, cause why not
+    elif user_input == 6 :  # rating, cause why not
 
       print("")
       print(
@@ -798,7 +792,7 @@ while True:
       else:
         print(" ಠ⁠ ⁠೧⁠ ⁠ಠ wow ")
 
-    elif user_input == 8:
+    elif user_input == 7:
       print(" Thank you for experiencing 'Your Trusty Online Tarot Reading'")
       break
 
@@ -806,10 +800,19 @@ while True:
       print("")
       print(" Please select a valid number available from the option")
 
-  elif user_input == 3:
+  elif user_input == 3: # function
+    print("")
+    print("Your history has been cleared")
+    def clear_screen():
+      os.system('cls' if os.name == 'nt' else 'clear')
+    clear_screen()
+  elif user_input == 4: 
     print("")
     print("Thank you for experiencing 'Your Trusty Online Tarot Reading'")
     break
+  else:
+    print("")
+    print("Please Input a valid number from the option")
 
 # resources
 # wikihow, pinterest ( for art inspo )
