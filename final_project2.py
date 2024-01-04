@@ -80,7 +80,30 @@ tarot_cards = [
     "major_arcana/The_Magician.png", "major_arcana/Reversed_The_Magician.png", "major_arcana/The_Moon.png", "major_arcana/Reversed_The_Moon.png",
     "major_arcana/The_Star.png", "major_arcana/Reversed_The_Star.png", "major_arcana/The_Strength.png", "major_arcana/Reversed_The_Strength.png",
     "major_arcana/The_Sun.png", "major_arcana/Reversed_The_Sun.png", "major_arcana/The_Tower.png", "major_arcana/Reversed_The_Tower.png",
-    "major_arcana/The_Wheel_Of_Fortune.png", "major_arcana/Reversed_The_Wheel_Of_Fortune.png", "major_arcana/The_World.png", "major_arcana/Reversed_The_World.png"
+    "major_arcana/The_Wheel_Of_Fortune.png", "major_arcana/Reversed_The_Wheel_Of_Fortune.png", "major_arcana/The_World.png", "major_arcana/Reversed_The_World.png",
+    "minor_arcana/41.png","minor_arcana/42.png", "minor_arcana/43.png", "minor_arcana/44.png", "minor_arcana/45.png",
+    "minor_arcana/46.png", "minor_arcana/47.png", "minor_arcana/48.png", "minor_arcana/49.png", "minor_arcana/50.png", "minor_arcana/51.png",
+    "minor_arcana/52.png", "minor_arcana/53.png", "minor_arcana/54.png", "minor_arcana/55.png", "minor_arcana/56.png",
+    "minor_arcana/57.png", "minor_arcana/58.png", "minor_arcana/59.png", "minor_arcana/60.png", "minor_arcana/61.png",
+    "minor_arcana/62.png", "minor_arcana/63.png", "minor_arcana/64.png", "minor_arcana/65.png", "minor_arcana/66.png",
+    "minor_arcana/67.png", "minor_arcana/68.png", "minor_arcana/69.png", "minor_arcana/70.png","minor_arcana/71.png",
+    "minor_arcana/72.png", "minor_arcana/73.png", "minor_arcana/74.png", "minor_arcana/75.png", "minor_arcana/76.png",
+    "minor_arcana/77.png", "minor_arcana/78.png", "minor_arcana/79.png", "minor_arcana/80.png", "minor_arcana/81.png",
+    "minor_arcana/82.png", "minor_arcana/83.png", "minor_arcana/84.png", "minor_arcana/85.png", "minor_arcana/86.png",
+    "minor_arcana/87.png", "minor_arcana/88.png", "minor_arcana/89.png", "minor_arcana/90.png", "minor_arcana/91.png",
+    "minor_arcana/92.png", "minor_arcana/93.png", "minor_arcana/94.png", "minor_arcana/95.png", "minor_arcana/96.png",
+    "minor_arcana/97.png", "minor_arcana/98.png", "minor_arcana/99.png", "minor_arcana/100.png", "minor_arcana/101.png",
+    "minor_arcana/102.png", "minor_arcana/103.png", "minor_arcana/104.png", "minor_arcana/105.png", "minor_arcana/106.png",
+    "minor_arcana/107.png", "minor_arcana/108.png", "minor_arcana/109.png", "minor_arcana/110.png", "minor_arcana/111.png",
+    "minor_arcana/112.png", "minor_arcana/113.png", "minor_arcana/114.png", "minor_arcana/115.png", "minor_arcana/116.png",
+    "minor_arcana/117.png", "minor_arcana/118.png", "minor_arcana/119.png", "minor_arcana/120.png", "minor_arcana/121.png",
+    "minor_arcana/122.png", "minor_arcana/123.png", "minor_arcana/124.png", "minor_arcana/125.png", "minor_arcana/126.png",
+    "minor_arcana/127.png", "minor_arcana/128.png", "minor_arcana/129.png", "minor_arcana/130.png", "minor_arcana/131.png",
+    "minor_arcana/132.png", "minor_arcana/133.png", "minor_arcana/134.png", "minor_arcana/135.png", "minor_arcana/136.png",
+    "minor_arcana/137.png", "minor_arcana/138.png", "minor_arcana/139.png", "minor_arcana/140.png", "minor_arcana/141.png", 
+    "minor_arcana/142.png", "minor_arcana/143.png", "minor_arcana/144.png", "minor_arcana/145.png", "minor_arcana/146.png",
+    "minor_arcana/147.png", "minor_arcana/148.png", "minor_arcana/149.png", "minor_arcana/150.png", "minor_arcana/151.png",
+    "minor_arcana/152.png", "minor_arcana/153.png", "minor_arcana/154.png", "minor_arcana/155.png", "minor_arcana/156.png"
 ]
 
 window_size = "900x600" # use this instead of repeating the window size
@@ -132,7 +155,7 @@ while True:
     print("")
     print("Tarot Cards are divided into multiple types of reading styles,")
 
-    print("and that includes these 4 options.")
+    print("and that includes these 5 options.")
     print("")
 
     print("Please choose one of the reading options below")
@@ -465,7 +488,7 @@ while True:
     print("")
     print("Tarot Cards are divided into multiple types of reading styles,")
 
-    print("and that includes these 4 options.")
+    print("and that includes these 5 options.")
     print("")
 
     print("Please choose one of the reading options below")
@@ -824,6 +847,3 @@ while True:
 # print the name of the tarot card in the console when the picture shows up in the output page
 # add defenitions of each card so users can understand what the cards stands for in given situations
 
-
-# ADJUSTMENTS 
-# CHANGE LILLY TO UDER_NAME 
