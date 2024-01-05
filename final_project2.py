@@ -144,7 +144,7 @@ while True:
     print("")
     print("Users Info :")
     print("")
-    print("1. Introduction :", user.Intro)
+    print("1. Name :", user.Intro)
     print("")
     print("2. Occupation :", user.Occupation)
     print("")
@@ -829,6 +829,7 @@ while True:
     def clear_screen():
       os.system('cls' if os.name == 'nt' else 'clear')
     clear_screen()
+
   elif user_input == 4: 
     print("")
     print("Thank you for experiencing 'Your Trusty Online Tarot Reading'")
@@ -847,3 +848,6 @@ while True:
 # print the name of the tarot card in the console when the picture shows up in the output page
 # add defenitions of each card so users can understand what the cards stands for in given situations
 
+
+# ADJUSTMENTS 
+# CHANGE LILLY TO UDER_NAME 
